@@ -79,7 +79,7 @@ export default function RootLayout({
 
           <Navbar />
           <main className="flex-grow transition-all duration-300 pt-20">
-            <Breadcrumbs />
+            {/* <Breadcrumbs /> */}
             {children}
           </main>
           <Footer />
