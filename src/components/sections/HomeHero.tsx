@@ -202,7 +202,7 @@ export default function HomeHero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 pb-12 px-6 overflow-hidden bg-black">
       {/* Background effects: deferred */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         {enableFx ? (
           <SparklesCore
             id="tsparticleshero"

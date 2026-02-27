@@ -130,14 +130,15 @@ export default function CurveLoader() {
   }, []);
 
   useEffect(() => {
-    // Prevent scroll while loader is present (optional, but avoids scroll jumps).
+    if (!open) return;
+
     const prevOverflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = "hidden";
 
     return () => {
       document.documentElement.style.overflow = prevOverflow;
     };
-  }, []);
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
